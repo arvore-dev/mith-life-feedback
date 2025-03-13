@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Mith Life Estética Avançada E Massoterapia</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <img src="assets/img/logo.jpg" alt="logo Mith Life Estética" class="logo">
+            <h2>Deixe seu Feedback</h2>
+    
+        <form id="feedbackForm">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="avaliacao">Como você avalia nosso atendimento?</label>
+            <select id="avaliacao" name="avaliacao" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Excelente">Excelente</option>
+                <option value="Bom">Bom</option>
+                <option value="Regular">Regular</option>
+                <option value="Ruim">Ruim</option>
+            </select>
+
+            <label for="comentario">Comentário (opcional):</label>
+            <textarea id="comentario" name="comentario" rows="4" placeholder="Digite seu comentário"></textarea>
+
+            <button type="button" onclick="enviarWhatsApp()">Enviar pelo WhatsApp</button>
+        </form>
+    </div>
+
+    <script src="assets/js/feedback.js"></script>
+</body>
+</html>
